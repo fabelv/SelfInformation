@@ -19,7 +19,7 @@ jobs:
         java-version: 1.8
 
     - name: Build with Maven
-      run: mvn clean package -DskipTests
+      run: ./mvnw package
 
     - name: Deploy to AWS Elastic Beanstalk
       uses: einaregilsson/beanstalk-deploy@v16
