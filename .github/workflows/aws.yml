@@ -30,8 +30,8 @@ jobs:
       with:
         aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        application_name: test-java-1
-        environment_name: Test-java-env-2
+        application_name: self-information
+        environment_name: Self-information-env
         version_label: ${{ github.sha }}
-        region: us-west-2
+        region: us-west-1
         deployment_package: target/self-information-0.0.1-SNAPSHOT.jar
